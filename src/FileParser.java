@@ -10,6 +10,8 @@ public class FileParser {
             String line = null;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
+                PostgresWriter postgresWriter = new PostgresWriter();
+                postgresWriter.write(line);
             }
         } catch (IOException e) {
             e.printStackTrace();
