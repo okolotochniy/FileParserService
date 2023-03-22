@@ -4,7 +4,7 @@ import java.nio.file.*;
 public class FileWatcher {
 
     public void run() throws IOException, InterruptedException {
-        String filePath = "/home/user/FileParserService/src/file.txt";
+        String filePath = "./file.txt";
         Path path = Paths.get(filePath);
 
         // Создаем WatchService и регистрируем его для отслеживания изменений в файле
